@@ -1,5 +1,5 @@
 Link to site:  https://ip5038.github.io/gui-hwk5/
-Link to git repo:
+Link to git repo: https://github.com/ip5038/gui-hwk5
 
 This website is a simple game of scrabble. Drag and drop letters from the rack 
 to create words. You will see the word and score on the top as you add letters. 
