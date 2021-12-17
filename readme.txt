@@ -1,4 +1,4 @@
-Link to site:
+Link to site:  https://ip5038.github.io/gui-hwk5/
 Link to git repo:
 
 This website is a simple game of scrabble. Drag and drop letters from the rack 
