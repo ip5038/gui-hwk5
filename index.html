@@ -1,0 +1,82 @@
+<!-- File: index.html  -->
+<!-- GUI Assignment: Create scrabble game online.  -->
+<!-- Ishan Patel, Umass Lowell Computer Science, -->
+<!-- ishankumar_patel@student.uml.edu -->
+<!-- Copyright (c) 2021 by Ishan. All rights reserved. May be freely copied or excerpted for educational  -->
+<!-- purposes with credit to Ishan.  -->
+<!-- Updated on  12/16/2021 -->
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Boiler plate code -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<!-- CSS only -->
+	<title> Scrabble </title>
+</head>
+
+<body>
+	<h1 id="mainTitle"> Scrabble </h1>
+
+	<!-- Show insturctions and scro info about the game -->
+	<div id="info">
+		<div id="instruct"> 
+			<h4>* Create a word with no spaces between each letter. </h4>
+			<h4>* You need atleast 2 letters to form a word.</h4>
+			<h4>* The word must be in dictionary.</h4>
+			<h4>* Boxes bordered blue give double points.</h4>
+			<h4>* You cannot put back a letter from the middle of a word. This is to prevent holes in the word.</h4>
+		</div>
+
+		<div id="data"> 
+			<h4 id="word"> Word: </h4>
+			<h4 id="score"> Score: </h4>
+			<!-- <h4 id="remainingTiles"> Remaining Tiles: 100/100</h4> -->
+			<h4 id="highestScore"> Highest Score: </h4>
+		</div>
+	</div>
+
+	<hr id="topLine">
+
+	<!-- These divs will be the scrabble board where letters can be dropped -->
+	<div class="inputs">
+		<div id="in1" class="input1" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		<div id="in2" class="input2" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		<div id="in3" class="input3" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		<div id="in4" class="input4" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		<div id="in5" class="input5" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		<div id="in6" class="input6" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+		<div id="in7" class="input7" ondrop="drop(event)" ondragover="allowDrop(event)"> </div>
+	</div>
+
+	<!-- These divs will be the rack that contain random letters -->
+	<div class="letters">
+		<div id="lt1" class="letter1" draggable="true" ondragstart="drag(event)">X </div>
+		<div id="lt2" class="letter2" draggable="true" ondragstart="drag(event)">X </div>
+		<div id="lt3" class="letter3" draggable="true" ondragstart="drag(event)">X </div>
+		<div id="lt4" class="letter4" draggable="true" ondragstart="drag(event)">X </div>
+		<div id="lt5" class="letter5" draggable="true" ondragstart="drag(event)">X </div>
+		<div id="lt6" class="letter6" draggable="true" ondragstart="drag(event)">X </div>
+		<div id="lt7" class="letter7" draggable="true" ondragstart="drag(event)">X </div>
+	</div>
+
+	<!-- Used for error message showing -->
+	<h5 id="errMsg" >  </h4>
+
+	<div id="buttons"> 
+		<button id="play" onclick="submitPressed()" disabled="true"> Next Word </button>
+		<button id="restart" onclick="restartPressed()"> Restart </button>
+	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/additional-methods.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

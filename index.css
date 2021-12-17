@@ -1,0 +1,134 @@
+/* <!-- File: index.html  -->
+<!-- GUI Assignment: Create scrabble game online.  -->
+<!-- Ishan Patel, Umass Lowell Computer Science, -->
+<!-- ishankumar_patel@student.uml.edu -->
+<!-- Copyright (c) 2021 by Ishan. All rights reserved. May be freely copied or excerpted for educational  -->
+<!-- purposes with credit to Ishan.  -->
+<!-- Updated on  12/16/2021 -->
+<!--  --> */
+
+body {
+    background-image: url("wood_back.png")
+}
+
+h4 {
+    margin: 0px auto;
+    text-align: center;
+}
+
+/* Center main title with brown text and 48 font size */
+#mainTitle {
+    color: #5B270B;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 48px;
+}
+
+/* Draw seperator line */
+#topLine {
+    width: 45%;
+    border: 2px solid #5B270B;
+    min-width: 650px;
+}
+
+/* Show game instructions in the middle of the screen */
+#info {
+    margin: 0px auto;
+    width: 750px;
+}
+
+/* Show score, high score, etc.. in the middle */
+#data {
+    margin: 0 auto;
+}
+
+#instruct{ 
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+/* Line up the input divs in a row */
+.inputs {
+    margin: 0px auto;
+    width: 875px;
+}
+
+#in1, #in2, #in3, #in4, #in5, #in6, #in7 {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+/* Line up rack divs in a row*/
+.input1, .input2, .input3, .input4, .input5, .input6, .input7 {
+    width: 100px;
+    height: 100px;
+    background-image: url("");
+    background-size: cover;
+    border: 2px solid black;
+    font-size:  0px;
+}
+
+.letters {
+    margin: 0px auto;
+    width: 805px;
+    
+}
+
+#lt1, #lt2, #lt3, #lt4, #lt5, #lt6, #lt7 {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    font-size: 0px; 
+}
+
+.letter1, .letter2, .letter3, .letter4, .letter5, .letter6, .letter7 {
+    width: 90px;
+    height: 90px;
+    background-image: url("Scrabble_Tiles/Scrabble_Tile_X.jpg");
+    background-size: cover;
+    border: 2px solid rgba(169, 101, 0, 0.502);
+}
+
+/* Customize buttons with size 45 by 220*/
+#buttons {
+    margin: 0px auto;
+    width: 220px;
+    height: 45px;
+}
+
+/* Put the buttons next to eachother*/
+#play {
+    float: left;
+    width: 100px;
+    height: 45px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#restart {
+    float: left;
+    width: 100px;
+    height: 45px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Show error message in the middle */
+#errMsg {
+    width: 400px;
+    text-align: center;
+    padding-top: 300px;
+    margin: 0 auto;
+}
+
+/* Put blue border on div2 and div5 because the are bonus divs*/
+.input2, .input5 {
+    border-color:aqua;
+}
